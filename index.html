@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <style>
+      .visually-hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <header class="header"></header>
     <div class="logo"></div>
     <ul class="user-menu">
       <li>
-        <form>
-          <input type="text" value="Текст поиска">
+        <form class="form-search">
+          <input type="text" name="text-search" value="Текст поиска">
           <input type="submit" value="Найти">
         </form>
       </li>
@@ -28,7 +33,28 @@
     </nav>
     <main class="content">
       <h1 class="visually-hidden">Интернет магазин умных устройств</h1>
-      <article class="slider"></article>
+      <section class="slider">
+        <ul class="slider-list">
+          <li class="slider-first">
+            <div class="slider-image">
+              <a href="#"><img alt="image"></a>
+            </div>
+            <div class="slider-content">
+              <h2>Порхает как бабочка, жалит как пчела!</h2>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a href="#">Подробнее</a>
+              <ul class="slider-toggle">
+                <li class="slider-active"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </li>
+          <li class="slider-second visually-hidden"></li>
+          <li class="slider-third visually-hidden"></li>
+        </ul>
+      </section>
       <section class="catalog-products">
         <ul class="catalog-products_list">
           <li>Виртуальная реальность</li>
